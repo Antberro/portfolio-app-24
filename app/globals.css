@@ -3,31 +3,47 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 30, 30, 30;
+  --background-rgb: 247, 247, 255;
+  --on-hover-rgb: 197, 34, 51;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb))
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .bg-background-rgb {
+    background-color: rgb(var(--background-rgb));
+  }
+  .highlight-on-hover:hover {
+    color: rgb(var(--on-hover-rgb));
+  }
+
+  /* Font family for nav links and major titles. */
+  .primary-ff {
+    font-family: var(--font-alata), sans-serif;
+    font-weight: 400;
+  }
+
+  /* Font family for minor titles. */
+  .secondary-ff {  
+    font-family: var(--font-tajawal), sans-serif;
+    font-weight: 700;
+  }
+
+  /* Font family for basic text. */
+  .tertiary-ff {
+    font-family: var(--font-tajawal), Roboto;
+    font-weight: 400;
+  }
+
+  .skill-tag {
+    color: rgb(var(--on-hover-rgb));
+    background-color: rgba(197, 34, 51, 0.3);
   }
 }
