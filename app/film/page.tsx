@@ -14,7 +14,7 @@ export default function Film() {
 
       {/* Content */}
       <div className="flex flex-grow pt-8 pb-8">
-        <div className="w-full sm:columns-2 gap-8 px-8">
+        {/* <div className="w-full sm:columns-2 gap-8 px-8">
           {filmSamples.map( (x, idx) => (
             <div key={idx}>
               <video 
@@ -27,7 +27,7 @@ export default function Film() {
               </video>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* Footer */}
