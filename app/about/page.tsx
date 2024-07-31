@@ -58,7 +58,7 @@ export default function About() {
 
           {/* Links section */}
           <div className="flex flex-col px-10 secondary-ff pb-14">
-            <div>See full <a className="underline" href="https://drive.google.com/file/d/1P3rkNFJ40PU1C66nhPos6OuUSD1FQFr5/view">resume</a> ↗️</div>
+            <div>See full <a className="underline" href="https://drive.google.com/file/d/1ceu8rvkAhIU0wB_VZjzztoG7LItdsIdQ/view?usp=share_link">resume</a> ↗️</div>
             <div>Email me at <a className="underline" href="mailto:antonioberrones.ab@gmail.com">antonioberrones.ab@gmail.com</a></div>
           </div>
         </div>
